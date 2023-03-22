@@ -1,0 +1,101 @@
+.tk {
+  font-size: 50px;
+}
+.titulo {
+  text-align: center;
+}
+body{
+  border-radius: 17px;
+background: linear-gradient(145deg, #8c5e5e, #a76f6f);
+box-shadow:  5px 5px 100px #906060,
+             -5px -5px 100px #a87070;
+}
+.blocos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bc {
+  border-radius: 17px;
+background: linear-gradient(145deg, #8c5e5e, #a76f6f);
+box-shadow:  7px 7px 35px #614040,
+             -7px -7px 35px #d79090;
+  margin: 20px;
+  padding: 10px;
+  text-align: center
+}
+
+#linha {
+  display: grid;
+  border-radius: 3px;
+  max-width: 100%;
+  text-align: center;
+}
+.button {
+  --color: #b4c98d;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .button::before, .button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .button::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ .button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ .button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ .button:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ .button:active {
+  filter: brightness(.8);
+ }
+
+ h3{
+  font-size: 30px;
+  color: #360909;
+ }
+ 
+@media screen and (max-width: 415px) {
+  .blocos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bc:hover {
+  transform: scale(0.95);
+}

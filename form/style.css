@@ -1,0 +1,19 @@
+.formulario{
+  display: grid;
+  border: solid 2px;
+  border-color: black;
+  justify-content: center;
+  border-radius: 17px;
+  background: linear-gradient(145deg, #8c5e5e, #a76f6f);
+  box-shadow:  7px 7px 35px #614040,
+               -7px -7px 35px #d79090;
+    margin: 20px;
+    padding: 10px;
+    text-align: center
+}
+body{
+  border-radius: 17px;
+background: linear-gradient(145deg, #8c5e5e, #a76f6f);
+box-shadow:  5px 5px 100px #906060,
+             -5px -5px 100px #a87070;
+}
